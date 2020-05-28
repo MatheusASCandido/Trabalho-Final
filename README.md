@@ -1,4 +1,4 @@
-# Projeto <Titulo>.
+# Projeto <Titulo.
 
 # Equipe
   * Pedro Hori Bueno - RA 223402
