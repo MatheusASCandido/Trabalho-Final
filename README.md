@@ -82,19 +82,45 @@ Interfaces associadas a este componente.
 
 |Campo | Valor |
 |----- |-------|
-|Classe|       |
+|Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Objetivo| |
+|Objetivo|refere-se a todos os tipos de peças aliadas, mais precisamente as cinco como na imagem acima|
 |Interface| |
 
-## Detalhamento das Interfaces
+public ITabuleiro{  
+ public void criar_tabuleiro(int R, int L, int A);  
+}  
+public IRecursos{   
+ public void MostrarRecursos();   
+ public int AlterarRecursos();   
+}  
+public IPecas{  
+ public void Interagir(Tabuleiro t, int X, int Y);  
+}
 
-### Interface `<nome>`
-`<papel da interface>`
+
+## Detalhamento das Interfaces
+### Interface ITabuleiro
+Essa interface é responsável por assegurar as ações basicas para o funcionamento do tabuleiro.
 
 |Método | Objetivo |
 |-------|----------|
-|       |          |
+|public void criar_tabuleiro(int R, int L, int A);|tornar possivel criar o tabuleiro inicial para cada rodada, gera o tabuleiro inicial da rodada|
+
+### Interface IRecursos
+Controla e monitora os recursos que o usuario possui.
+
+|Método | Objetivo |
+|-------|----------|
+|public void MostrarRecursos();|mostra na tela os recursos disponiveis|
+|public int AlterarRecursos();|altera e retorna a quantidade de recursos|
+
+### Interface IPecas
+Tem como papel unificar os três tipos macros de peças: aliadas, inimigas e estaticas;
+
+|Método | Objetivo |
+|-------|----------|
+|public void Interagir(Tabuleiro t, int X, int Y)| nas peças aliadas executa as interações de defesa e ataque para com o espaço celular,ja que essas peças nao se movem|
 
 # Componente PecasInimigas
 ![Pecas Inimigas](pecasinimigas.png)
@@ -107,19 +133,33 @@ Interfaces associadas a este componente.
 
 |Campo | Valor |
 |----- |-------|
-|Classe|       |
+|Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Objetivo| |
+|Objetivo|refere-se a todos os tipos de peças inimigas, mais precisamente as cinco como na imagem acima|
 |Interface| |
 
-## Detalhamento das Interfaces
+public ITabuleiro{  
+ public void criar_tabuleiro(int R, int L, int A);  
+}  
+public IPecas{  
+ public void Interagir(Tabuleiro t, int X, int Y);  
+}  
 
-### Interface `<nome>`
-`<papel da interface>`
+## Detalhamento das Interfaces
+### Interface ITabuleiro
+Essa interface é responsável por assegurar as ações basicas para o funcionamento do tabuleiro.
 
 |Método | Objetivo |
 |-------|----------|
-|       |          |
+|public void criar_tabuleiro(int R, int L, int A);|tornar possivel criar o tabuleiro inicial para cada rodada, gera o tabuleiro inicial da rodada|
+
+### Interface IPecas
+Tem como papel unificar os três tipos macros de peças: aliadas, inimigas e estaticas;
+
+|Método | Objetivo |
+|-------|----------|
+|public void Interagir(Tabuleiro t, int X, int Y)| nas peças inimigas, realiza o movimento delas, ou ataca peças aliadas ou estaticas|
+
 
 # Componente PecasEstaticas
 ![Pecas Estaticas](pecasestaticas.png)
@@ -132,17 +172,30 @@ Interfaces associadas a este componente.
 
 |Campo | Valor |
 |----- |-------|
-|Classe|       |
+|Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Objetivo| |
+|Objetivo|refere-se aos três tipos de peças estaticas: árvore, pedra, água|
 |Interface| |
 
+public ITabuleiro{  
+ public void criar_tabuleiro(int R, int L, int A);  
+}  
+public IPecas{  
+ public void Interagir(Tabuleiro t, int X, int Y);  
+}  
 ## Detalhamento das Interfaces
 
-### Interface `<nome>`
-`<papel da interface>`
+### Interface ITabuleiro
+Essa interface é responsável por assegurar as ações basicas para o funcionamento do tabuleiro.
 
 |Método | Objetivo |
 |-------|----------|
-|       |          |
+|public void criar_tabuleiro(int R, int L, int A);|tornar possivel criar o tabuleiro inicial para cada rodada, gera o tabuleiro inicial da rodada|
+
+### Interface IPecas
+Tem como papel unificar os três tipos macros de peças: aliadas, inimigas e estaticas;
+
+|Método | Objetivo |
+|-------|----------|
+|public void Interagir(Tabuleiro t, int X, int Y)| nas peças estaticas faz a interação de modo a ajudar ou atrapalhar o ataque e a defesa em cada rodada|
 
