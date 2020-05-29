@@ -5,10 +5,10 @@
   * Matheus Augusto da Silva Cândido - RA 241640
 
 # Descrição Resumida do Projeto
-Este é um jogo single player no qual o jogador tem como objetivo impedir a invasão de inimigos em seu território utilizando defesas estáticas que podem ser construídas ao decorrer do jogo utilizando recursos.
-	O tabuleiro do jogo será dividido por células, de modo que cada célula pode estar vazia, conter alguma unidade aliada (construída pelo jogador), conter alguma unidade inimiga, ou conter alguma peça estática (característica do próprio tabuleiro criado). As unidades inimigas surgem nas células mais à direita do tabuleiro, e conforme as rodadas passam elas se movem para a parte esquerda do tabuleiro. Se alguma unidade inimiga conseguir alcançar a extremidade esquerda do tabuleiro sem ser impedida ou morta, o jogador perde o jogo. O jogador vence o jogo quando as rodadas acabarem e todas as unidades inimigas forem eliminadas no tabuleiro. Pretendemos criar diversos tipos de unidades inimigas e aliadas (cada uma representada por uma classe diferente) que interajam com sua vizinhança de maneiras distintas e criativas.
-	O jogo seria dividido em fases com  diferentes dificuldades. Cada fase possuiria um tabuleiro levemente diferente (em que as peças estáticas são posicionadas de maneira diferente) e as unidades aliadas disponíveis seriam diferentes assim como as inimigas que estariam invadindo.
-	Também gostaríamos de utilizar uma boa interface gráfica para o jogo. Desta forma cada peça possuiria um nome e desenho relativo a ela baseado na temática do jogo, o que tornaria o jogo menos abstrato e melhoraria a experiência do jogador.
+Este é um jogo single player no qual o jogador tem como objetivo impedir a invasão de inimigos em seu território utilizando defesas estáticas que podem ser construídas ao decorrer do jogo utilizando recursos.  
+    O tabuleiro do jogo será dividido por células, de modo que cada célula pode estar vazia, conter alguma unidade aliada (construída pelo jogador), conter alguma unidade inimiga, ou conter alguma peça estática (característica do próprio tabuleiro criado). As unidades inimigas surgem nas células mais à direita do tabuleiro, e conforme as rodadas passam elas se movem para a parte esquerda do tabuleiro. Se alguma unidade inimiga conseguir alcançar a extremidade esquerda do tabuleiro sem ser impedida ou morta, o jogador perde o jogo. O jogador vence o jogo quando as rodadas acabarem e todas as unidades inimigas forem eliminadas no tabuleiro. Pretendemos criar diversos tipos de unidades inimigas e aliadas (cada uma representada por uma classe diferente) que interajam com sua vizinhança de maneiras distintas e criativas.  
+	O jogo seria dividido em fases com  diferentes dificuldades. Cada fase possuiria um tabuleiro levemente diferente (em que as peças estáticas são posicionadas de maneira diferente) e as unidades aliadas disponíveis seriam diferentes assim como as inimigas que estariam invadindo.  
+	Também gostaríamos de utilizar uma boa interface gráfica para o jogo. Desta forma cada peça possuiria um nome e desenho relativo a ela baseado na temática do jogo, o que tornaria o jogo menos abstrato e melhoraria a experiência do jogador.  
   
 # Vídeo do Projeto
 * [Video com explicação básica do jogo](https://drive.google.com/file/d/1PenhFqBI79RkenKXz6Xt08x29YHh8kXR/view?usp=sharing)
@@ -30,7 +30,7 @@ Interfaces associadas a este componente.
 |Classe|pt.principal|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Objetivo|Este componente tem como objetivo controlar o tabuleiro do jogo. |
-|Interface||
+|Interface|public ITabuleiro|
 
 public ITabuleiro{  
  public void criar_tabuleiro(int R, int L, int A);  
@@ -55,7 +55,7 @@ Interfaces associadas a este componente.
 |Classe|pt.principal|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Objetivo|Armazenar os recursos para a produção de peças aliadas|
-|Interface| |
+|Interface|public IRecursos|
 
 public IRecursos{  
  public void MostrarRecursos();  
@@ -85,7 +85,7 @@ Interfaces associadas a este componente.
 |Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Objetivo|refere-se a todos os tipos de peças aliadas, mais precisamente as cinco como na imagem acima|
-|Interface| |
+|Interface|public ITabuleiro; public IRecursos; public IPecas;|
 
 public ITabuleiro{  
  public void criar_tabuleiro(int R, int L, int A);  
@@ -136,7 +136,7 @@ Interfaces associadas a este componente.
 |Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Objetivo|refere-se a todos os tipos de peças inimigas, mais precisamente as cinco como na imagem acima|
-|Interface| |
+|Interface|public ITabuleiro; public IPecas;|
 
 public ITabuleiro{  
  public void criar_tabuleiro(int R, int L, int A);  
@@ -175,7 +175,7 @@ Interfaces associadas a este componente.
 |Classe|pt.principal.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Objetivo|refere-se aos três tipos de peças estaticas: árvore, pedra, água|
-|Interface| |
+|Interface|public ITabuleiro; public IPecas;|
 
 public ITabuleiro{  
  public void criar_tabuleiro(int R, int L, int A);  
