@@ -12,7 +12,8 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
   
 # Vídeo do Projeto
 * [Video com explicação básica do jogo](https://drive.google.com/file/d/1PenhFqBI79RkenKXz6Xt08x29YHh8kXR/view?usp=sharing)
-
+# Slide do Projeto
+* [Slide do projeto](https://docs.google.com/presentation/d/1OUHMlqgoMDY4zieyRQ7nLU_UCLnYMEF865pBTfMvgnE/edit?usp=sharing)
 # Diagrama Geral de Componentes
 ![aliadas](Componentes_PecasAliadas.png)
 ![sequencia](Componentes_Pecas2.png)
