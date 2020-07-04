@@ -31,5 +31,17 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 # Diagramas
 ## Diagrama Geral do Projeto
 ## Diagrama Geral de Componentes
+### Componente < Componente >
+Colocar todos
+
+# Plano de Exceções
+## Diagrama da Hierarquia de excessões
+## Descrição das classes de exceção
+
+|Classe|Descrição|
+|:-----:|:------:|
+|Excecao|Engloba todas as exceções na conversão de String para int|
+|ExcecaoX|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada x|
+|ExcecaoY|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada y|
 
 
