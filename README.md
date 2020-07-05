@@ -29,6 +29,12 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 # Conclusões e Trabalhos Futuros
 # Documentação dos Componentes
 # Diagramas
+|Classe|Descrição|
+|:-----:|:------:|
+|Excecao|Engloba todas as exceções na conversão de String para int|
+|ExcecaoX|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada x|
+|ExcecaoY|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada y|
+
 ## Diagrama Geral do Projeto
 ## Diagrama Geral de Componentes
 ### Componente < Componente >
