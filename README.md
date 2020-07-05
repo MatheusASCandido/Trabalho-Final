@@ -44,6 +44,29 @@ public void criarTab() {//cria os objetos na matriz de peças, todos primeiramen
 ~~~
 ~~~java
 ...
+//aqui construimos uma peça
+//mecanica de tirar um celula do lugar e colocar outra,
+//destaque pois para uma peça se mover apresenta uma estrutura semelhante
+//criar um novo objeto e substituir na matriz de peças e no GridLayout
+		x=f.x;
+		y=f.y;
+		int z;
+		  if (f.tab[y][x].nome == '-' ) {
+				z= f.tab[y][x].pos;
+				pe = new Fabrica(f,z);
+					if (f.rec.dinheiro >= pe.custo) {
+						f.removerPeca(z);
+						f.tab[y][x] = new Fabrica(f,z);
+						f.adicionaPeca(f.tab[y][x], z);
+						f.rec.alterarRecursos(0, pe.custo);		
+					}
+					
+					
+			}
+			...
+~~~
+~~~java
+...
 public void mostrarRecursos() {//altera na tela os recursos disponiveis
 	     
 		String s =Integer.toString(dinheiro);
