@@ -36,9 +36,9 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 
 ![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componentes.png)
 
-### Componente Tabeleiro
+### Componente Tabuleiro
 
-Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, ja que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessáriamente possui um tabuleiro.
+Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, já que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessariamente possui um tabuleiro.
 
 ![imagem_componentes_Tabuleiro](imagem_componentes_Tabuleiro.png)
 
