@@ -40,6 +40,8 @@ Colocar todos
 
 ### Interface ITabuleiro
 
+Interface impelemntada por todos os tabuleiros criados durante o jogo, determinando seu comportamento.
+
 |Método|Objetivo|
 |:-----:|:------:|
 |CriarTab|Cria um novo tabuleiro com espaços vazios|
@@ -51,6 +53,59 @@ Colocar todos
 |adicionarPeca|Adiciona uma peça ao tabuleiro|
 |removerPeca|Remove uma peça do tabuleiro|
 |adicionarComando|Adiciona um botão ao tabuleiro|
+
+### Interface ITabuleiroDois
+
+Interface implementada pelo tabuleiro da fase dois (serve para determinar o padrão de entrada de monstros novos no mapa na segunda fase).
+
+|Método|Objetivo|
+|:-----:|:------:|
+|entrarDois|Determina como novos monstros entram no tabuleiro|
+
+### Interface ITabuleiroTres
+
+Interface implementada pelo tabuleiro da fase três (serve para determinar o padrão de entrada de monstros novos no mapa na terceira fase).
+
+|Método|Objetivo|
+|:-----:|:------:|
+|entrarTres|Determina como novos monstros entram no tabuleiro|
+
+
+### Interface IPecas
+
+Interface implementada por todas as peças do jogo, inclusive células vazia. Esta interface permite que todas as células do tabuleiro seja composto por objetos que implementam a mesma interface, possibilitando interações mais simples e eficientes durante o código.
+
+|Método|Objetivo|
+|:-----:|:------:|
+|interagir|Faz com que uma peça efetue sua interação no tabuleiro|
+|mover|Faz com que uma peça efetue seu movimento no tabueliro|
+
+### Interface IRecursos
+
+Interface implementada pelo recurso do jogo presente em cada uma das fases. Esta interface permite que as devidas operações sejam feitas para altarar a quantidade de recursos e mostrar os recursos que o jogador possui durante a fase.
+
+|Método|Objetivo|
+|:-----:|:------:|
+|alterarRecursos|Altera os recursos do jogador|
+|mostrarRecursos|Mostra os recursos do jogador na tela|
+
+### Interface IFases
+
+Interface implementada pelas fases do jogo. Esta interface permite ao jogador fazer ações durante a fase, um elemento central do jogo.
+
+|Método|Objetivo|
+|:-----:|:------:|
+|continuar|Avança em um a rodada de determinada fase e faz todas as peças do tabuleiro efetuarem suas interações|
+|construir|Permite que o jogador construa no tabueliro|
+
+### Interface IJanela
+
+Interface implementada pelas janelas abertas do jogo. Esta interface possibilita a criação de novas janelas do jogo.
+
+|Método|Objetivo|
+|:-----:|:------:|
+|janelaVisual|Cria e abre uma nova janela do jogo no computador|
+
 
 # Plano de Exceções
 ## Diagrama da Hierarquia de excessões
