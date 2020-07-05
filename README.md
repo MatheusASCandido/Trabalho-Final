@@ -424,22 +424,6 @@ public interface ITabuleiroTres {
 # Interfaces
 
 
-
-![imagem_IPeças](imagem_IPecas.png)
-
-![imagem_Aliadas](imagem_Aliadas.png)
-
-![imagem_Inimigas](imagem_Inimigas.png)
-
-![imagem_Neutras](imagem_Neutras.png)
-
-![imagem_ITRecursos](imagem_IRecursos.png)
-
-![imagem_IFases](imagem_IFases.png)
-
-![imagem_IJanela](imagem_IJanela.png)
-
-
 ## Detalhamento das Interfaces
 ![imagem_ITabuleiro](Imagem_ITabuleiro.png)
 ### Interface ITabuleiro
@@ -475,6 +459,13 @@ IInterface implementada pela classe TabuleiroTres, classe essa que extende Tabul
 |:-----:|:------:|
 |entrarTres|Determina como monstros da fase 3 entram no tabuleiro|
 
+![imagem_IPeças](imagem_IPecas.png)
+
+![imagem_Aliadas](imagem_Aliadas.png)
+
+![imagem_Inimigas](imagem_Inimigas.png)
+
+![imagem_Neutras](imagem_Neutras.png)
 
 ### Interface IPecas
 
@@ -485,6 +476,8 @@ Interface implementada por todas as peças do jogo, inclusive células vazia. Es
 |interagir|Faz com que uma peça efetue sua interação no tabuleiro|
 |mover|Faz com que uma peça efetue seu movimento no tabueliro|
 
+![imagem_ITRecursos](imagem_IRecursos.png)
+
 ### Interface IRecursos
 
 Interface implementada pelo recurso do jogo presente em cada uma das fases. Esta interface permite que as devidas operações sejam feitas para altarar a quantidade de recursos e mostrar os recursos que o jogador possui durante a fase.
@@ -492,7 +485,9 @@ Interface implementada pelo recurso do jogo presente em cada uma das fases. Esta
 |Método|Objetivo|
 |:-----:|:------:|
 |alterarRecursos|Altera os recursos do jogador|
-|mostrarRecursos|Mostra os recursos do jogador na tela|
+|mostrarRecursos|Altera o label de recursos que aparece na tela|
+
+![imagem_IFases](imagem_IFases.png)
 
 ### Interface IFases
 
@@ -500,8 +495,10 @@ Interface implementada pelas fases do jogo. Esta interface permite ao jogador fa
 
 |Método|Objetivo|
 |:-----:|:------:|
-|continuar|Avança em um a rodada de determinada fase e faz todas as peças do tabuleiro efetuarem suas interações|
+|continuar|Avança em um a rodada de determinada fase e faz todas as peças do tabuleiro efetuarem suas interações ou moverem|
 |construir|Permite que o jogador construa unidades no tabueliro|
+
+![imagem_IJanela](imagem_IJanela.png)
 
 ### Interface IJanela
 
@@ -509,7 +506,7 @@ Interface implementada pelas janelas abertas do jogo. Esta interface possibilita
 
 |Método|Objetivo|
 |:-----:|:------:|
-|janelaVisual|Cria e abre uma nova janela do jogo|
+|janelaVisual|Cria o design de determinadas janelas do jogo|
 
 
 # Plano de Exceções
