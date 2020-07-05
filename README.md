@@ -96,7 +96,7 @@ Interface implementada pelas fases do jogo. Esta interface permite ao jogador fa
 |Método|Objetivo|
 |:-----:|:------:|
 |continuar|Avança em um a rodada de determinada fase e faz todas as peças do tabuleiro efetuarem suas interações|
-|construir|Permite que o jogador construa no tabueliro|
+|construir|Permite que o jogador construa unidades no tabueliro|
 
 ### Interface IJanela
 
@@ -104,7 +104,7 @@ Interface implementada pelas janelas abertas do jogo. Esta interface possibilita
 
 |Método|Objetivo|
 |:-----:|:------:|
-|janelaVisual|Cria e abre uma nova janela do jogo no computador|
+|janelaVisual|Cria e abre uma nova janela do jogo|
 
 
 # Plano de Exceções
