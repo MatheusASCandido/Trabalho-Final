@@ -11,7 +11,13 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import pt.principal.*;
-
+//Projeto Defenda-se da Invasão
+/* Autorores:
+* Pedro Hori Bueno - RA 223402
+* Matheus Augusto da Silva Cândido - RA 241640
+* Disciplina MC 322 - Programação Orientada a Objetos
+* Professor André Santanche
+*/
 public class Instrucao extends JFrame implements IJanela{
 	private static final long serialVersionUID = 5243112469295145682L;
 	private JPanel centro;

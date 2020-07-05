@@ -1,7 +1,13 @@
 package pt.principal;
 
 import pt.pecas.*;
-
+//Projeto Defenda-se da Invasão
+/* Autorores:
+* Pedro Hori Bueno - RA 223402
+* Matheus Augusto da Silva Cândido - RA 241640
+* Disciplina MC 322 - Programação Orientada a Objetos
+* Professor André Santanche
+*/
 public class TabuleiroTres extends TabuleiroDois implements ITabuleiroTres {
 	private static final long serialVersionUID = -7219738107775451885L;
 	public TabuleiroTres(String s) {

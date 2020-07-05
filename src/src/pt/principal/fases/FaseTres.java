@@ -7,7 +7,13 @@ import javax.swing.JOptionPane;
 
 import pt.pecas.*;
 import pt.principal.*;
-
+//Projeto Defenda-se da Invasão
+/* Autorores:
+* Pedro Hori Bueno - RA 223402
+* Matheus Augusto da Silva Cândido - RA 241640
+* Disciplina MC 322 - Programação Orientada a Objetos
+* Professor André Santanche
+*/
 public class FaseTres extends FaseDois implements IFases{
 	protected TabuleiroTres f3 =  new TabuleiroTres("Fase 3");
 	public FaseTres(int arvores, int pedras, int lagos,String fase) {

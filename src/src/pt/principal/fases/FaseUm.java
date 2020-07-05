@@ -9,7 +9,13 @@ import javax.swing.JOptionPane;
 
 import pt.principal.*;
 import pt.pecas.*;
-
+//Projeto Defenda-se da Invasão
+/* Autorores:
+* Pedro Hori Bueno - RA 223402
+* Matheus Augusto da Silva Cândido - RA 241640
+* Disciplina MC 322 - Programação Orientada a Objetos
+* Professor André Santanche
+*/
 public class FaseUm implements IFases{
 	
 	protected Tabuleiro f1 =  new Tabuleiro("Fase 1");;
