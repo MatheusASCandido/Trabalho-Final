@@ -34,7 +34,7 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 ## Diagrama Geral do Projeto
 ## Diagrama Geral de Componentes
 
-![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componentes.png)
+![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componetes.png)
 
 ### Componente Tabuleiro
 
