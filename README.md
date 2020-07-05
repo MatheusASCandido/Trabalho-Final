@@ -25,6 +25,7 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 # Destaques de Código
 # Destaques de Pattern
 ## Diagrama do Pattern
+![imagem_Pattern](imagem_Pattern.png)
 ## Código do Patern
 # Conclusões e Trabalhos Futuros
 # Documentação dos Componentes
@@ -32,9 +33,14 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 
 ## Diagrama Geral do Projeto
 ## Diagrama Geral de Componentes
+
+![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componentes.png)
+
 ### Componente Tabeleiro
 
 Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, ja que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessáriamente possui um tabuleiro.
+
+![imagem_componentes_Tabuleiro](imagem_componentes_Tabuleiro.png)
 
 #### Ficha Técnica
 
@@ -48,6 +54,8 @@ Este componente representa todos os tabuleiros gerados no jogo. Ele interage com
 
 Este componente representa todas as peças aliadas do jogo (que o jogador pode construir). Ele interage com o tabuleiro, pois as peças são construidas no tabuleiro, e também interage com o recurso, pois para o jogador construir novas peças aliadas ele gasta uma determinada quantidade de recurso.
 
+![imagem_componentes_Aliadas](imagem_componentes_Aliadas.png)
+
 #### Ficha Técnica
 
 |Item|Detalhamento|
@@ -60,6 +68,8 @@ Este componente representa todas as peças aliadas do jogo (que o jogador pode c
 
 Este componente representa todas as peças inimigas do jogo (os monstros que invadem o tabuleiro). Ele interage com o tabuleiro, pois as peças inimigas surgem no tabuleiro e interagem nele.
 
+![imagem_componentes_Inimigas](imagem_componentes_Inimigas.png)
+
 #### Ficha Técnica
 
 |Item|Detalhamento|
@@ -71,6 +81,8 @@ Este componente representa todas as peças inimigas do jogo (os monstros que inv
 ### Componente Neutras
 
 Este componente representa todas as peças neutras do jogo, que são posiconas no tabuleiro quando ele é gerado. Desta forma, este componente também interage com o tabuleiro.
+
+![imagem_componentes_Neutras](imagem_componentes_Neutras.png)
 
 #### Ficha Técnica
 
@@ -85,6 +97,8 @@ Este componente representa todas as peças neutras do jogo, que são posiconas n
 
 Este componente representa todas as peças da classe vazio presentes no tabuleiro, ou seja, todas as células vazias.
 
+![imagem_componentes_Vazio](imagem_componentes_Vazio.png)
+
 #### Ficha Técnica
 
 |Item|Detalhamento|
@@ -93,9 +107,25 @@ Este componente representa todas as peças da classe vazio presentes no tabuleir
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IPeças|
 
+### Componente Recursos
+
+Este componente representa o recurso do tabuleiro.
+
+![imagem_componentes_Recursos](imagem_componentes_Recursos.png)
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IRecursos|
+
 ### Componente Fase1
 
 Este componente representa a fase 1 do jogo. Como a fase um é composta por um tabuleiro, este componente interage com tabuleiro.
+
+![imagem_componentes_Fase1](imagem_componentes_Fase1.png)
 
 #### Ficha Técnica
 
@@ -109,6 +139,8 @@ Este componente representa a fase 1 do jogo. Como a fase um é composta por um t
 
 Este componente representa a fase 2 do jogo. Como a fase dois é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroDois, que determina os monstros da segunda fase.
 
+![imagem_componentes_Fase2](imagem_componentes_Fase2.png)
+
 #### Ficha Técnica
 
 |Item|Detalhamento|
@@ -120,6 +152,8 @@ Este componente representa a fase 2 do jogo. Como a fase dois é composta por um
 ### Componente Fase3
 
 Este componente representa a fase 3 do jogo. Como a fase três é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroTres, que determina os monstros da terceira fase.
+
+![imagem_componentes_Fase3](imagem_componentes_Fase3.png)
 
 #### Ficha Técnica
 
@@ -133,6 +167,21 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 ### Interfaces
 
 ![imagem_ITabuleiro](Imagem_ITabuleiro.png)
+
+![imagem_IPeças](imagem_IPecas.png)
+
+![imagem_Aliadas](imagem_Aliadas.png)
+
+![imagem_Inimigas](imagem_inimigas.png)
+
+![imagem_Neutras](imagem_neutras.png)
+
+![imagem_ITRecursos](imagem_IRecursos.png)
+
+![imagem_IFases](imagem_IFases.png)
+
+![imagem_IJanelas](imagem_IJanelas.png)
+
 
 ## Detalhamento das Interfaces
 
@@ -207,6 +256,9 @@ Interface implementada pelas janelas abertas do jogo. Esta interface possibilita
 
 # Plano de Exceções
 ## Diagrama da Hierarquia de excessões
+
+![imagem_Exceçao](imagem_Exeção.png)
+
 ## Descrição das classes de exceção
 
 |Classe|Descrição|
