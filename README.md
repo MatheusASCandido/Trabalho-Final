@@ -36,7 +36,11 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 Colocar todos
 ### Interfaces
 
-|Classe|Descrição|
+## Detalhamento das Interfaces
+
+###Interface ITabuleiro
+
+|Método|Objetivo|
 |:-----:|:------:|
 |Itabuleiro|Engloba todas as exceções na conversão de String para int|
 |criarTab()|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada x|
