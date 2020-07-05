@@ -38,13 +38,19 @@ Colocar todos
 
 ## Detalhamento das Interfaces
 
-###Interface ITabuleiro
+### Interface ITabuleiro
 
 |Método|Objetivo|
 |:-----:|:------:|
-|Itabuleiro|Engloba todas as exceções na conversão de String para int|
-|criarTab()|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada x|
-|ExcecaoY|Verifica e solicita ao usuario um valor que possa ser convertido para int para a coordenada y|
+|CriarTab|Cria um novo tabuleiro com espaços vazios|
+|fazerTab|Configura o tabuleiro adicionando peças neutras, recursos iniciais e a quantidade de rodadas|
+|addFundo|Adiciona o fundo da fase|
+|entrar|Adiciona novos monstros ao tabuleiro|
+|executar|Percorre o tabuleiro fazendo as peças efetuarem suas ações|
+|procurarMonstro|Verifica se existem monstros no tabuleiro|
+|adicionarPeca|Adiciona uma peça ao tabuleiro|
+|removerPeca|Remove uma peça do tabuleiro|
+|adicionarComando|Adiciona um botão ao tabuleiro|
 
 # Plano de Exceções
 ## Diagrama da Hierarquia de excessões
