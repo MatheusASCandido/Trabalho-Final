@@ -21,7 +21,7 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 ## Slides da Apresentação Final
 *
 ## Relatório de Evolução
-*Este projeto sofreu diversas alterações ao longo de seu desenvolvimento, tanto alterações simples de atributos básicos das unidades quanto alterações mais complexas que mudavam de maneira significativa a estrutura do programa.
+* Este projeto sofreu diversas alterações ao longo de seu desenvolvimento, tanto alterações simples de atributos básicos das unidades quanto alterações mais complexas que mudavam de maneira significativa a estrutura do programa.
 # Destaques de Código
 # Destaques de Pattern
 ## Diagrama do Pattern
