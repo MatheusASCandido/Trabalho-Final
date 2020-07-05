@@ -30,7 +30,9 @@ Finalmente, depois destas mudanças finais, o jogo foi concluido.
 # Destaques de Código
 # Destaques de Pattern
 ## Diagrama do Pattern
+
 ![imagem_Pattern](imagem_Pattern.png)
+
 ## Código do Patern
 # Conclusões e Trabalhos Futuros
 Após finalizarmos o projeto, concluimos que ainda há muito que pode ser explorado dentro deste jogo. A programação das classes assim como a escolha de interfaces foi feita de modo que é fácil de se criar novas fases, assim como novas peças. Muitas ideias de peças foram descartadas ao longo do percurso pois seriam muito demoradas para serem implementadas, mas trariam uma complexidadee e diversidade maior para o jogo. Com mais tempo, seria possível implementar essas peças e outras, assim como novas fases. Também gostariamos de implementar futuramente um modo "construtor" no jogo, em que o jogador consegueria construir sua própria fase dentro do joga e jogá-la. Isto seria muito interessante, pois abre um senário para a criatividade do jogador que não pode ser explorado somente com fase pré-desenvolvidas.
@@ -40,6 +42,9 @@ Outra implementação que gostariamos de fazer futuramente, pois acreditamos que
 # Diagramas
 
 ## Diagrama Geral do Projeto
+
+![imagem_diagrama_Geral](imagem_diagrama_Geral.png)
+
 ## Diagrama Geral de Componentes
 
 ![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componetes.png)
