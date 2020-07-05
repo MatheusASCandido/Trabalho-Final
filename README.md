@@ -45,6 +45,7 @@ Outra implementação que gostariamos de fazer futuramente, pois acreditamos que
 
 ![imagem_diagrama_Geral](imagem_diagrama_Geral.png)
 
+Este diagrama mostra o percurso que o jogador faz ao iniciar o jogo, e quais possibilidades de escolha ele tem. Cada retângulo preto simboliza uma tela do jogo, enquanto os retângulos vermelhos representam os botões presentes em cada tela e para onde eles direcionam o jogador. Ao abrir o jogo, o jogador se depara com um Menu, em que é possível selecionar as intruções (para aprender mais sobre o jogo) ou selecionar uma fase para jogar. Dentro de cada fase está implementado um tabuleiro com características específicas. Nele, o jogador escolhe ou ações de construir(apertando o botão de contruir) ou de continuar(apertando o botão de continuar) até que ele vença ou perca o jogo. Caso ele perca, ele será redirecionado para o Menu após a tela de fim de jogo, mas caso ele ganhe ele poderá jogar a próxima fase em sequencia. Se o jogador ganhar a terceira fase, ele é enviado para uma tela onde é informada de que venceu o jogo.
 ## Diagrama Geral de Componentes
 
 ![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componetes.png)
