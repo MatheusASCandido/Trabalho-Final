@@ -42,6 +42,8 @@ public void criarTab() {//cria os objetos na matriz de peças, todos primeiramen
         }
 }
 ~~~
+
+
 ~~~java
 ...
 //aqui construimos uma peça
@@ -65,6 +67,8 @@ public void criarTab() {//cria os objetos na matriz de peças, todos primeiramen
 			}
 			...
 ~~~
+
+
 ~~~java
 ...
 public void mostrarRecursos() {//altera na tela os recursos disponiveis
@@ -75,6 +79,8 @@ public void mostrarRecursos() {//altera na tela os recursos disponiveis
 }
 ...
 ~~~
+
+
 ~~~java
 ...
 //criação de um determinado tipo de botao
@@ -84,6 +90,7 @@ Icon bot = new ImageIcon("src//assets//menub.png");
 		adicionaComando(acabou);
 ...
 ~~~
+
 
 ~~~java
 ...
@@ -104,6 +111,8 @@ public void continuar() {
 		...
 }
 ~~~
+
+
 ~~~java
 ...
 //sequencia para a construção de uma determinada peça na fase 1
@@ -120,6 +129,8 @@ String[] itens = {"Fabrica - custo 50","Soldado - custo 100"};
 			  e.verificarPosicao(stringX,stringY);
 			  ....
 ~~~
+
+
 ~~~java
 ...
 //parte da interacao no espaco celular de uma peca inimiga
@@ -130,6 +141,40 @@ public void interagir(int posicaoX, int posicaoY){
 			}
 			
 		}...
+}
+~~~
+
+~~~java
+public abstract class Inimigas extends Pecas {//classe pai de todas as classes inimigas
+    private static final long serialVersionUID = 1L;
+    int dano;
+    public Inimigas(String s,int z) {
+        super(s,z);
+    }
+public void causarDano(int posicaoX, int posicaoY, int x, int y, int dano) {
+...}
+public void interagir(int posicaoX, int posicaoY){
+    ...}
+public abstract void andar(int posicaoX, int posicaoY, int x, int y, int l);
+    public abstract void mover(int posicaoX, int posicaoY);
+}
+~~~
+
+
+~~~java
+public class Monstro extends Inimigas{
+    private static final long serialVersionUID = 1L;
+    public Monstro(Tabuleiro tab,int z) {
+        super("src\\assets\\monstro1.png",z);
+        vida = 2;
+        nome = 'm';
+        tipo = "Inimigas";
+        dano = 1;
+        this.tabu = tab;
+}...
+public void interagir(int posicaoX, int posicaoY) {
+        super.interagir(posicaoX, posicaoY);//utilização do interagir da classe Inimigas
+    }...
 }
 ~~~
 
