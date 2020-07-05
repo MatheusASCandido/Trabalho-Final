@@ -85,9 +85,15 @@ public interface ITabuleiro{
 	public void removerPeca(int posicao);
 	public void adicionaComando (JButton comando);
 }
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
 ~~~
 
-### Componente Aliadas
+## Componente Aliadas
 
 Este componente representa todas as peças aliadas do jogo (que o jogador pode construir). Ele interage com o tabuleiro, pois as peças são construidas no tabuleiro, e também interage com o recurso, pois para o jogador construir novas peças aliadas ele gasta uma determinada quantidade de recurso.
 
@@ -101,7 +107,37 @@ Este componente representa todas as peças aliadas do jogo (que o jogador pode c
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
-### Componente Inimigas
+### Interfaces
+Interfaces associadas a esse componente:
+
+~~~java
+public interface IPecas {
+	
+	public void interagir(int posicaoX, int posicaoY);
+	public void mover(int posicaoX, int posicaoY);
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
+~~~
+
+## Componente Inimigas
 
 Este componente representa todas as peças inimigas do jogo (os monstros que invadem o tabuleiro). Ele interage com o tabuleiro, pois as peças inimigas surgem no tabuleiro e interagem nele.
 
@@ -115,7 +151,38 @@ Este componente representa todas as peças inimigas do jogo (os monstros que inv
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
-### Componente Neutras
+### Interfaces
+Interfaces associadas a esse componente:
+
+~~~java
+public interface IPecas {
+	
+	public void interagir(int posicaoX, int posicaoY);
+	public void mover(int posicaoX, int posicaoY);
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
+~~~
+
+
+## Componente Neutras
 
 Este componente representa todas as peças neutras do jogo, que são posiconas no tabuleiro quando ele é gerado. Desta forma, este componente também interage com o tabuleiro.
 
@@ -129,8 +196,39 @@ Este componente representa todas as peças neutras do jogo, que são posiconas n
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
+### Interfaces
+Interfaces associadas a esse componente:
 
-### Componente Vazio
+~~~java
+public interface IPecas {
+	
+	public void interagir(int posicaoX, int posicaoY);
+	public void mover(int posicaoX, int posicaoY);
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
+~~~
+
+
+
+## Componente Vazio
 
 Este componente representa todas as peças da classe vazio presentes no tabuleiro, ou seja, todas as células vazias.
 
@@ -144,7 +242,38 @@ Este componente representa todas as peças da classe vazio presentes no tabuleir
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
-### Componente Recursos
+### Interfaces
+Interfaces associadas a esse componente:
+
+~~~java
+public interface IPecas {
+	
+	public void interagir(int posicaoX, int posicaoY);
+	public void mover(int posicaoX, int posicaoY);
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
+~~~
+
+
+## Componente Recursos
 
 Este componente representa os recursos necessários para a construção de peças de defesa.
 
@@ -158,7 +287,17 @@ Este componente representa os recursos necessários para a construção de peça
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IRecursos|
 
-### Componente Fase1
+### Interfaces
+Interfaces associadas a esse componente:
+~~~java
+public interface IRecursos {
+	public void alterarRecursos(int operacao, int valor);
+	public void mostrarRecursos();
+}
+
+~~~
+
+## Componente Fase1
 
 Este componente representa a fase 1 do jogo. Como a fase um é composta por um tabuleiro, este componente interage com tabuleiro.
 
@@ -172,7 +311,30 @@ Este componente representa a fase 1 do jogo. Como a fase um é composta por um t
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IFases,ITabuleiro|
 
-### Componente Fase2
+### Interfaces
+Interfaces associadas a esse componente
+~~~java
+public interface IFases {
+	
+	public void continuar();
+	public void construir();
+	
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+~~~
+## Componente Fase2
 
 Este componente representa a fase 2 do jogo. Como a fase dois é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroDois, que determina os monstros da segunda fase.
 
@@ -186,7 +348,34 @@ Este componente representa a fase 2 do jogo. Como a fase dois é composta por um
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IFases,ITabuleiro,ITabuleiroDois|
 
-### Componente Fase3
+### Interfaces
+Interfaces associadas a esse componente
+~~~java
+public interface IFases {
+	
+	public void continuar();
+	public void construir();
+	
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+~~~
+
+## Componente Fase3
 
 Este componente representa a fase 3 do jogo. Como a fase três é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroTres, que determina os monstros da terceira fase.
 
@@ -200,8 +389,39 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IFases,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
-
 ### Interfaces
+Interfaces associadas a esse componente
+~~~java
+public interface IFases {
+	
+	public void continuar();
+	public void construir();
+	
+}
+
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+public interface ITabuleiroDois {
+	public void entrarDois(int l, int posicaoY);
+}
+public interface ITabuleiroTres {
+	public void entrarTres(int l, int posicaoY);
+}
+~~~
+
+
+
+# Interfaces
 
 ![imagem_ITabuleiro](Imagem_ITabuleiro.png)
 
@@ -223,6 +443,7 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 ## Detalhamento das Interfaces
 
 ### Interface ITabuleiro
+![imagem_ITabuleiro](Imagem_ITabuleiro.png)
 
 Interface impelemntada por todos os tabuleiros criados durante o jogo, determinando seu comportamento.
 
@@ -230,8 +451,8 @@ Interface impelemntada por todos os tabuleiros criados durante o jogo, determina
 |:-----:|:------:|
 |CriarTab|Cria um novo tabuleiro com espaços vazios|
 |fazerTab|Configura o tabuleiro adicionando peças neutras, recursos iniciais e a quantidade de rodadas|
-|addFundo|Adiciona o fundo da fase|
-|entrar|Adiciona novos monstros ao tabuleiro|
+|addFundo|Adiciona cada celula no GridLayout|
+|entrar|Adiciona monstros da fase 1ao tabuleiro|
 |executar|Percorre o tabuleiro fazendo as peças efetuarem suas ações|
 |procurarMonstro|Verifica se existem monstros no tabuleiro|
 |adicionarPeca|Adiciona uma peça ao tabuleiro|
@@ -244,7 +465,7 @@ Interface implementada pelo tabuleiro da fase dois (serve para determinar o padr
 
 |Método|Objetivo|
 |:-----:|:------:|
-|entrarDois|Determina como novos monstros entram no tabuleiro|
+|entrarDois|Determina como monstros da fase 2 entram no tabuleiro|
 
 ### Interface ITabuleiroTres
 
@@ -252,7 +473,7 @@ Interface implementada pelo tabuleiro da fase três (serve para determinar o pad
 
 |Método|Objetivo|
 |:-----:|:------:|
-|entrarTres|Determina como novos monstros entram no tabuleiro|
+|entrarTres|Determina como monstros da fase 3 entram no tabuleiro|
 
 
 ### Interface IPecas
