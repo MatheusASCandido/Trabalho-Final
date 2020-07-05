@@ -132,7 +132,7 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 
 ### Interfaces
 
-![imagem_ITabuleiro](imagem_Itabuleiro.png)
+![Imagem_ITabuleiro](imagem_Itabuleiro.png)
 
 ## Detalhamento das Interfaces
 
