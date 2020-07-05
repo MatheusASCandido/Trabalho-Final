@@ -32,8 +32,16 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 
 ## Diagrama Geral do Projeto
 ## Diagrama Geral de Componentes
-### Componente < Componente >
-Colocar todos
+### Componente Tabeleiro
+
+Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com os recursos, ja que cada tabuleiro possui seus determinados recursos no início do jog e interage com todas as fases, já que cada fase do jogo nescessáriamente possui um tabuleiro.
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|ITabuleiro, ITabuleiroDois, ITabuleiroTres|
+
 ### Interfaces
 
 ## Detalhamento das Interfaces
