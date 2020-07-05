@@ -22,8 +22,10 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 *
 ## Relatório de Evolução
 Este projeto sofreu diversas alterações ao longo de seu desenvolvimento, tanto alterações simples de atributos básicos das unidades quanto alterações mais complexas que mudavam de maneira significativa a estrutura do programa. Inicialmete, o jogo começou a ser prográmado com interfaces gráficas muito mais simples em que o tabuleiro e as peças eram feitas com Strings, de maneira similar ao que foi feito nos programas da dama e do xadrez. Além disso, foi implementada somente uma fase de testes, sem possuir um menu inicial. Nós utilizamos este códico mais simplificado para testar todas as interações de vizinhança entre as peças, descartando as ideias inviáveis e desenvolvendo novas interações. Também utilizamos este código para testar o balanceamento do jogo mudando atributos básicos das peças como "dano", "vida" ou "custo", de maneira a melhorar a experiência do jogador. Após o programa estar rodando perfeitamente nesta interface gráfica simplificada, começamos a implementar a interface gráfica definitiva. Neste processo, acabamos criando novas interfaces e classes que não estavam previstas inicialmente no projeto, como uma interface para criar deferentes fases. Implementamos 3 fases com diferentes unidades e níveis de dificuldade, além de uma área de menu, onde o jogador pode selecionar a fase que ele deseja jogar, e uma página com as instruções de como se jogar o jogo.
+
 Após concluirmos a implementação da interface gráfica finalo jogo estava praticamente pronto. Nós nos dedicamos por fm a deixar o layout do jogo o melhor e mais intuitivo possível. Alteramos as posições de botões e de informações na tela, alteramos o modo de se selicionar unidades e criamos telas intermediárias para direcionar o jogador durante o jogo. 
-Finalmente, depois destas mudanças finais, o jogo está pronto.
+
+Finalmente, depois destas mudanças finais, o jogo foi concluido.
 
 # Destaques de Código
 # Destaques de Pattern
