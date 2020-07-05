@@ -30,12 +30,116 @@ Finalmente, depois destas mudanças finais, o jogo foi concluido.
 Cabe ressaltar, que as grandes dificuldades encontradas foram em estruturas de Pattern, e na diagramação de telas. Buscando entender melhor as restrições de cada tipo de Layout, o jogo foi implementado da forma que mais se encaixava nos Layouts escolhidos.
 
 # Destaques de Código
+~~~java
+...
+public void criarTab() {//cria os objetos na matriz de peças, todos primeiramente da classe vazio
+	int z=0;
+        for (int i=0; i < 6; i++) {
+        	for (int j=0; j < 10; j++) {
+        		tab[i][j] = new Vazio(z);
+        		z++;
+        	}
+        }
+}
+~~~
+~~~java
+...
+public void mostrarRecursos() {//altera na tela os recursos disponiveis
+	     
+		String s =Integer.toString(dinheiro);
+		tab.label1.setText("Recursos disponivel: " + s);
+		tab.label1.updateUI();
+}
+...
+~~~
+~~~java
+...
+//criação de um determinado tipo de botao
+Icon bot = new ImageIcon("src//assets//menub.png");
+		acabou = new JButton(bot);
+		acabou.setBounds(425, 500, 150, 75);
+		adicionaComando(acabou);
+...
+~~~
+
+~~~java
+...
+//parte da execução de rodadas na fase 1
+public void continuar() {
+		if(f1.vitoria==true) {
+			f1.executar();
+			if(f1.rodada<f1.fim) {
+				novoMonstro = rand.nextInt(6);
+				l = f1.tab[novoMonstro][9].pos;
+				if(f1.rodada%2==1) {
+					f1.entrar(l,novoMonstro,'m');
+			}
+			else {
+					1.entrar(l,novoMonstro,'r');//r de monstro rapido
+			}
+		}
+		...
+}
+~~~
+~~~java
+...
+//sequencia para a construção de uma determinada peça na fase 1
+String[] itens = {"Fabrica - custo 50","Soldado - custo 100"};
+		  String selectedValue = (String) JOptionPane.showInputDialog(null,
+		          "Escolha um item", "Construir",
+		              JOptionPane.INFORMATION_MESSAGE, null,
+		                  itens, itens [0]); //
+		 
+		  if(selectedValue!=null){
+			  String stringX   = JOptionPane.showInputDialog("Digite um valor para a coordenda x");
+			  String stringY   = JOptionPane.showInputDialog("Digite um valor para a coordenda y");
+			  Excecao e = new Excecao(f1);
+			  e.verificarPosicao(stringX,stringY);
+			  ....
+~~~
+~~~java
+...
+//parte da interacao no espaco celular de uma peca inimiga
+public void interagir(int posicaoX, int posicaoY){
+		if (tabu.tab[posicaoY][posicaoX-1].tipo == "Aliadas" || tabu.tab[posicaoY][posicaoX-1].nome == 'a') {
+			if(tabu.tab[posicaoY][posicaoX-1].nome!='e') {
+				causarDano(posicaoX, posicaoY, -1, 0, dano);
+			}
+			
+		}...
+}
+~~~
+
+
 # Destaques de Pattern
+
+O Pattern adotado foi o Action Listener, de modo que determinada ação desencadeava em outra.
+
 ## Diagrama do Pattern
 
 ![imagem_Pattern](imagem_Pattern.png)
 
 ## Código do Patern
+~~~java
+...
+acabou.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+            	
+            	dispose();
+        		Menu menu = new Menu();
+        		menu.iniciarMenu();
+            		
+            }
+        });
+	...
+~~~
+Utilizamos o pattern de modo que o acionamento de cada botão dentro do jogo gerava uma nova ação.
+* O botão menu, fecha a tela atual, e abre o menu
+* O botão faseX, abre a fase equivalente, sendo X = 1,2,3
+* O botão instrucoes, abre a tela de instruções
+* O botão construir, permite a construção de uma determinada peça de defesa
+* O botão continue, executa novas  rodadas na fase que esta sendo executada
+
 # Conclusões e Trabalhos Futuros
 Após finalizarmos o projeto, concluimos que ainda há muito que pode ser explorado dentro deste jogo. A programação das classes assim como a escolha de interfaces foi feita de modo que é fácil de se criar novas fases, assim como novas peças. Muitas ideias de peças foram descartadas ao longo do percurso pois seriam muito demoradas para serem implementadas, mas trariam uma complexidadee e diversidade maior para o jogo. Com mais tempo, seria possível implementar essas peças e outras, assim como novas fases. Também gostariamos de implementar futuramente um modo "construtor" no jogo, em que o jogador consegueria construir sua própria fase dentro do jogo e jogá-la. Isto seria muito interessante, pois abre um senário para a criatividade do jogador que não pode ser explorado somente com fase pré-desenvolvidas.
 
