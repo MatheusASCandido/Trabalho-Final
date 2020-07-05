@@ -13,7 +13,7 @@ public class MonstroRapido extends Inimigas {
 	private static final long serialVersionUID = 1072432926757815722L;
 
 	public MonstroRapido(Tabuleiro tab,int z) {
-		super("src\\assets\\rapido.png",z);
+		super("src\\src\\assets\\rapido.png",z);
 		vida = 2;
 		dano = 1;
 		nome = 'M';

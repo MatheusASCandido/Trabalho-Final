@@ -43,7 +43,7 @@ public class EntreFaseTres extends JFrame implements IJanela{
 		
 		painelPrincipal.add(centro,BorderLayout.CENTER);
 		
-		Icon bot = new ImageIcon("src//assets//bfase3.png");
+		Icon bot = new ImageIcon("src//src//assets//bfase3.png");
 		fase3 = new JButton(bot);
 		fase3.setBounds(425, 500, 150, 75);
 		adicionaComando(fase3);

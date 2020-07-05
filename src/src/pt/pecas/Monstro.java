@@ -12,7 +12,7 @@ public class Monstro extends Inimigas{
 	private static final long serialVersionUID = 1L;
 	
 	public Monstro(Tabuleiro tab,int z) {
-		super("src\\assets\\monstro1.png",z);
+		super("src\\src\\assets\\monstro1.png",z);
 		vida = 2;
 		nome = 'm';
 		tipo = "Inimigas";

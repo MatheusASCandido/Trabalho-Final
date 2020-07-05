@@ -44,7 +44,7 @@ public class Instrucao extends JFrame implements IJanela{
 		
 		painelPrincipal.add(centro,BorderLayout.CENTER);
 		
-		Icon bot = new ImageIcon("src//assets//menub.png");
+		Icon bot = new ImageIcon("src//src//assets//menub.png");
 		menu = new JButton(bot);
 		menu.setBounds(425, 500, 150, 75);
 		adicionaComando(menu);

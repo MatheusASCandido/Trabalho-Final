@@ -29,17 +29,17 @@ public class FaseUm implements IFases{
 		f1.criarTab();
 		f1.fazerTab(arvores,pedras,lagos,500,20);
 		f1.addFundo();
-		Icon cont = new ImageIcon("src//assets//continue.png");
+		Icon cont = new ImageIcon("src//src//assets//continue.png");
 		next = new JButton(cont);
 		next.setBounds(10,10, 150,75);
 		f1.adicionaComando(next);
 		
-		Icon cont1 = new ImageIcon("src//assets//construir.png");
+		Icon cont1 = new ImageIcon("src//src//assets//construir.png");
 		constr = new JButton(cont1);
 		constr.setBounds(10,90, 150,75);
 		f1.adicionaComando(constr);
 		
-		Icon cont2 = new ImageIcon("src//assets//menub.png");
+		Icon cont2 = new ImageIcon("src//src//assets//menub.png");
 		voltar = new JButton(cont2);
 		voltar.setBounds(10,400, 150,75);
 		f1.adicionaComando(voltar);

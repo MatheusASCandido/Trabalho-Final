@@ -12,7 +12,7 @@ public class Tanque extends Aliadas{
 	private static final long serialVersionUID = 1L;
 
 	public Tanque(Tabuleiro tab,int z) {
-		super("src\\assets\\tanque.png",z);
+		super("src\\src\\assets\\tanque.png",z);
 		custo = 200;
 		vida = 3;
 		nome = 't';

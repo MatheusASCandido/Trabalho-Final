@@ -22,22 +22,22 @@ public class Fundo extends JPanel {
 	
 	public Fundo(String s) {
 		if(s.equalsIgnoreCase("menu")) {
-			ref = new ImageIcon("src\\assets\\fundoMenu.png");
+			ref = new ImageIcon("src\\src\\assets\\fundoMenu.png");
 		}
 		else if(s.equalsIgnoreCase("gameover")) {
-			ref = new ImageIcon("src\\assets\\gameover.png");
+			ref = new ImageIcon("src\\src\\assets\\gameover.png");
 		}
 		else if(s.equalsIgnoreCase("fase2")) {
-			ref = new ImageIcon("src\\assets\\vafase2.png");
+			ref = new ImageIcon("src\\src\\assets\\vafase2.png");
 		}
 		else if(s.equalsIgnoreCase("fase3")) {
-			ref = new ImageIcon("src\\assets\\vafase3.png");
+			ref = new ImageIcon("src\\src\\assets\\vafase3.png");
 		}
 		else if(s.equalsIgnoreCase("venceu")) {
-			ref = new ImageIcon("src\\assets\\venceu.png");
+			ref = new ImageIcon("src\\src\\assets\\venceu.png");
 		}
 		else if(s.equalsIgnoreCase("instrucao")) {
-			ref = new ImageIcon("src\\assets\\instrucoes.png");
+			ref = new ImageIcon("src\\src\\assets\\instrucoes.png");
 		}
 	
 		fundo = ref.getImage();

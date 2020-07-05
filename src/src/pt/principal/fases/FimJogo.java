@@ -45,7 +45,7 @@ public class FimJogo extends JFrame implements IJanela{
 		
 		painelPrincipal.add(centro,BorderLayout.CENTER);
 		
-		Icon bot = new ImageIcon("src//assets//menub.png");
+		Icon bot = new ImageIcon("src//src//assets//menub.png");
 		acabou = new JButton(bot);
 		acabou.setBounds(425, 500, 150, 75);
 		adicionaComando(acabou);

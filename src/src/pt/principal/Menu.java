@@ -47,22 +47,22 @@ public class Menu extends JFrame implements IJanela{
 		
 		painelPrincipal.add(centro,BorderLayout.CENTER);
 		
-		Icon bot3 = new ImageIcon("src//assets//binstrucao.png");
+		Icon bot3 = new ImageIcon("src//src//assets//binstrucao.png");
 		instrucoes = new JButton(bot3);
 		instrucoes.setBounds(425, 200, 150, 75);
 		adicionaComando(instrucoes);
 		
-		Icon bot = new ImageIcon("src//assets//bfase1.png");
+		Icon bot = new ImageIcon("src//src//assets//bfase1.png");
 		fase1 = new JButton(bot);
 		fase1.setBounds(425, 300, 150, 75);
 		adicionaComando(fase1);
 		
-		Icon bot1 = new ImageIcon("src//assets//bfase2.png");
+		Icon bot1 = new ImageIcon("src//src//assets//bfase2.png");
 		fase2 = new JButton(bot1);
 		fase2.setBounds(425, 400, 150, 75);
 		adicionaComando(fase2);
 		
-		Icon bot2 = new ImageIcon("src//assets//bfase3.png");
+		Icon bot2 = new ImageIcon("src//src//assets//bfase3.png");
 		fase3 = new JButton(bot2);
 		fase3.setBounds(425, 500, 150, 75);
 		adicionaComando(fase3);

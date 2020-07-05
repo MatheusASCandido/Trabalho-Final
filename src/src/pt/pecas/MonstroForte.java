@@ -11,7 +11,7 @@ import pt.principal.Tabuleiro;
 public class MonstroForte extends Inimigas {
 
 	public MonstroForte(Tabuleiro tab, int z) {
-		super("src\\assets\\mforte.png", z);
+		super("src\\src\\assets\\mforte.png", z);
 		vida = 5;
 		dano = 2;
 		nome = 'M';

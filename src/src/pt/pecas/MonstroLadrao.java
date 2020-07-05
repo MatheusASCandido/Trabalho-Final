@@ -13,7 +13,7 @@ public class MonstroLadrao extends Inimigas{
 	private static final long serialVersionUID = 4877530873964427711L;
 
 	public MonstroLadrao(Tabuleiro tab,int z) {
-		super("src\\assets\\ladrao.png",z);
+		super("src\\src\\assets\\ladrao.png",z);
 		vida = 3;
 		nome = 'M';
 		tipo = "Inimigas";

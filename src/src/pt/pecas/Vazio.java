@@ -12,7 +12,7 @@ public class Vazio extends Pecas {
 
 	private static final long serialVersionUID = 1L;
 	public Vazio(int z) {
-		super("src\\assets\\vaziov.png", z);
+		super("src\\src\\assets\\vaziov.png", z);
 		nome = '-';
 		tipo = "vazio";
 	}

@@ -44,7 +44,7 @@ public class EntreFaseDois extends JFrame implements IJanela{
 		
 		painelPrincipal.add(centro,BorderLayout.CENTER);
 		
-		Icon bot = new ImageIcon("src//assets//bfase2.png");
+		Icon bot = new ImageIcon("src//src//assets//bfase2.png");
 		fase2 = new JButton(bot);
 		fase2.setBounds(425, 500, 150, 75);
 		adicionaComando(fase2);

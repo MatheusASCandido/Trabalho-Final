@@ -13,7 +13,7 @@ public class Explosivo extends Aliadas {
 	int cronometro = 0;
 
 	public Explosivo (Tabuleiro tab,int z) {
-		super("src\\assets\\bomba.png",z);
+		super("src\\src\\assets\\bomba.png",z);
 		custo = 200;
 		vida = 1;
 		nome = 'e';
