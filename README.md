@@ -423,7 +423,7 @@ public interface ITabuleiroTres {
 
 # Interfaces
 
-![imagem_ITabuleiro](Imagem_ITabuleiro.png)
+
 
 ![imagem_IPeças](imagem_IPecas.png)
 
@@ -441,11 +441,11 @@ public interface ITabuleiroTres {
 
 
 ## Detalhamento das Interfaces
-
-### Interface ITabuleiro
 ![imagem_ITabuleiro](Imagem_ITabuleiro.png)
+### Interface ITabuleiro
 
-Interface impelemntada por todos os tabuleiros criados durante o jogo, determinando seu comportamento.
+
+Interface impelementada pela classe Tabuleiro, determinando seu comportamento. Classe Tabuleiro que controla determinadas funções nas três fases.
 
 |Método|Objetivo|
 |:-----:|:------:|
@@ -461,7 +461,7 @@ Interface impelemntada por todos os tabuleiros criados durante o jogo, determina
 
 ### Interface ITabuleiroDois
 
-Interface implementada pelo tabuleiro da fase dois (serve para determinar o padrão de entrada de monstros novos no mapa na segunda fase).
+Interface implementada pela classe TabuleiroDois, classe essa que extende Tabuleiro, e possui também a função de como os monstros da fase dois irão entrar no jogo.
 
 |Método|Objetivo|
 |:-----:|:------:|
@@ -469,7 +469,7 @@ Interface implementada pelo tabuleiro da fase dois (serve para determinar o padr
 
 ### Interface ITabuleiroTres
 
-Interface implementada pelo tabuleiro da fase três (serve para determinar o padrão de entrada de monstros novos no mapa na terceira fase).
+IInterface implementada pela classe TabuleiroTres, classe essa que extende TabuleiroDois, e tem a capacidade de determinar como os monstros da fase três entram no jogo.
 
 |Método|Objetivo|
 |:-----:|:------:|
