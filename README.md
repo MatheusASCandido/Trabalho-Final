@@ -172,9 +172,9 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 
 ![imagem_Aliadas](imagem_Aliadas.png)
 
-![imagem_Inimigas](imagem_inimigas.png)
+![imagem_Inimigas](imagem_Inimigas.png)
 
-![imagem_Neutras](imagem_neutras.png)
+![imagem_Neutras](imagem_Neutras.png)
 
 ![imagem_ITRecursos](imagem_IRecursos.png)
 
