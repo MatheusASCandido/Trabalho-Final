@@ -40,7 +40,7 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 
 Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, já que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessariamente possui um tabuleiro.
 
-![imagem_componentes_Tabuleiro](imagem_componentes_Tabuleiro.png)
+![imagem_componentes_Tabuleiro](imagem_componetes_Tabuleiro.png)
 
 #### Ficha Técnica
 
@@ -54,7 +54,7 @@ Este componente representa todos os tabuleiros gerados no jogo. Ele interage com
 
 Este componente representa todas as peças aliadas do jogo (que o jogador pode construir). Ele interage com o tabuleiro, pois as peças são construidas no tabuleiro, e também interage com o recurso, pois para o jogador construir novas peças aliadas ele gasta uma determinada quantidade de recurso.
 
-![imagem_componentes_Aliadas](imagem_componentes_Aliadas.png)
+![imagem_componentes_Aliadas](imagem_componetes_Aliadas.png)
 
 #### Ficha Técnica
 
@@ -68,7 +68,7 @@ Este componente representa todas as peças aliadas do jogo (que o jogador pode c
 
 Este componente representa todas as peças inimigas do jogo (os monstros que invadem o tabuleiro). Ele interage com o tabuleiro, pois as peças inimigas surgem no tabuleiro e interagem nele.
 
-![imagem_componentes_Inimigas](imagem_componete_Inimigas.png)
+![imagem_componentes_Inimigas](imagem_componentes_Inimigas.png)
 
 #### Ficha Técnica
 
