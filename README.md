@@ -68,7 +68,7 @@ Este componente representa todas as peças aliadas do jogo (que o jogador pode c
 
 Este componente representa todas as peças inimigas do jogo (os monstros que invadem o tabuleiro). Ele interage com o tabuleiro, pois as peças inimigas surgem no tabuleiro e interagem nele.
 
-![imagem_componentes_Inimigas](imagem_componentes_Inimigas.png)
+![imagem_componentes_Inimigas](imagem_componete_Inimigas.png)
 
 #### Ficha Técnica
 
@@ -82,7 +82,7 @@ Este componente representa todas as peças inimigas do jogo (os monstros que inv
 
 Este componente representa todas as peças neutras do jogo, que são posiconas no tabuleiro quando ele é gerado. Desta forma, este componente também interage com o tabuleiro.
 
-![imagem_componentes_Neutras](imagem_componentes_Neutras.png)
+![imagem_componentes_Neutras](imagem_componetes_Neutras.png)
 
 #### Ficha Técnica
 
@@ -97,7 +97,7 @@ Este componente representa todas as peças neutras do jogo, que são posiconas n
 
 Este componente representa todas as peças da classe vazio presentes no tabuleiro, ou seja, todas as células vazias.
 
-![imagem_componentes_Vazio](imagem_componentes_Vazio.png)
+![imagem_componentes_Vazio](imagem_componetes_Vazio.png)
 
 #### Ficha Técnica
 
