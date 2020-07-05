@@ -34,13 +34,101 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 ## Diagrama Geral de Componentes
 ### Componente Tabeleiro
 
-Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com os recursos, ja que cada tabuleiro possui seus determinados recursos no início do jog e interage com todas as fases, já que cada fase do jogo nescessáriamente possui um tabuleiro.
+Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, ja que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessáriamente possui um tabuleiro.
+
+#### Ficha Técnica
 
 |Item|Detalhamento|
 |:-----:|:------:|
 |Classe||
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|ITabuleiro, ITabuleiroDois, ITabuleiroTres|
+
+### Componente Aliadas
+
+Este componente representa todas as peças aliadas do jogo (que o jogador pode construir). Ele interage com o tabuleiro, pois as peças são construidas no tabuleiro, e também interage com o recurso, pois para o jogador construir novas peças aliadas ele gasta uma determinada quantidade de recurso.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IPeças|
+
+### Componente Inimigas
+
+Este componente representa todas as peças inimigas do jogo (os monstros que invadem o tabuleiro). Ele interage com o tabuleiro, pois as peças inimigas surgem no tabuleiro e interagem nele.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IPeças|
+
+### Componente Neutras
+
+Este componente representa todas as peças neutras do jogo, que são posiconas no tabuleiro quando ele é gerado. Desta forma, este componente também interage com o tabuleiro.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IPeças|
+
+
+### Componente Vazio
+
+Este componente representa todas as peças da classe vazio presentes no tabuleiro, ou seja, todas as células vazias.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IPeças|
+
+### Componente Fase1
+
+Este componente representa a fase 1 do jogo. Como a fase um é composta por um tabuleiro, este componente interage com tabuleiro.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IFases|
+
+### Componente Fase2
+
+Este componente representa a fase 2 do jogo. Como a fase dois é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroDois, que determina os monstros da segunda fase.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IFases|
+
+### Componente Fase3
+
+Este componente representa a fase 3 do jogo. Como a fase três é composta por um tabuleiro, este componente interage com tabuleiro. Esta interação ocorre pela interface ITabuleiroTres, que determina os monstros da terceira fase.
+
+#### Ficha Técnica
+
+|Item|Detalhamento|
+|:-----:|:------:|
+|Classe||
+|Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
+|Interfaces|IFases|
+
 
 ### Interfaces
 
