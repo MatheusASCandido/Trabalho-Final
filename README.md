@@ -21,11 +21,13 @@ Este é um jogo single player no qual o jogador tem como objetivo impedir a inva
 ## Slides da Apresentação Final
 *
 ## Relatório de Evolução
-Este projeto sofreu diversas alterações ao longo de seu desenvolvimento, tanto alterações simples de atributos básicos das unidades quanto alterações mais complexas que mudavam de maneira significativa a estrutura do programa. Inicialmete, o jogo começou a ser prográmado com interfaces gráficas muito mais simples em que o tabuleiro e as peças eram feitas com Strings, de maneira similar ao que foi feito nos programas da dama e do xadrez. Além disso, foi implementada somente uma fase de testes, sem possuir um menu inicial. Nós utilizamos este códico mais simplificado para testar todas as interações de vizinhança entre as peças, descartando as ideias inviáveis e desenvolvendo novas interações. Também utilizamos este código para testar o balanceamento do jogo mudando atributos básicos das peças como "dano", "vida" ou "custo", de maneira a melhorar a experiência do jogador. Após o programa estar rodando perfeitamente nesta interface gráfica simplificada, começamos a implementar a interface gráfica definitiva. Neste processo, acabamos criando novas interfaces e classes que não estavam previstas inicialmente no projeto, como uma interface para criar deferentes fases. Implementamos 3 fases com diferentes unidades e níveis de dificuldade, além de uma área de menu, onde o jogador pode selecionar a fase que ele deseja jogar, e uma página com as instruções de como se jogar o jogo.
+Este projeto sofreu diversas alterações ao longo de seu desenvolvimento, tanto alterações simples de atributos básicos das unidades quanto alterações mais complexas que mudavam de maneira significativa a estrutura do programa. Inicialmete, o jogo começou a ser prográmado com interfaces gráficas muito mais simples em que o tabuleiro e as peças eram feitas com Strings, de maneira similar ao que foi feito nos programas da dama e do xadrez. Além disso, foi implementada somente uma fase de testes, sem possuir um menu inicial. Nós utilizamos este códico mais simplificado para testar todas as interações de vizinhança entre as peças, descartando as ideias inviáveis e desenvolvendo novas interações. Também utilizamos este código para testar o balanceamento do jogo mudando atributos básicos das peças como "dano", "vida" ou "custo", de maneira a melhorar a experiência do jogador. Após o programa estar rodando perfeitamente nesta interface gráfica simplificada, começamos a implementar a interface gráfica definitiva. Neste processo, acabamos criando novas interfaces e classes que não estavam previstas inicialmente no projeto, como uma interface para criar diferentes fases. Implementamos 3 fases com diferentes unidades e níveis de dificuldade, além de uma área de menu, onde o jogador pode selecionar a fase que ele deseja jogar, e uma página com as instruções de como se jogar o jogo.
 
-Após concluirmos a implementação da interface gráfica finalo jogo estava praticamente pronto. Nós nos dedicamos por fm a deixar o layout do jogo o melhor e mais intuitivo possível. Alteramos as posições de botões e de informações na tela, alteramos o modo de se selicionar unidades e criamos telas intermediárias para direcionar o jogador durante o jogo. 
+Após concluirmos a implementação da interface gráfica final o jogo estava praticamente pronto. Nós nos dedicamos por fm a deixar o layout do jogo o melhor e mais intuitivo possível. Alteramos as posições de botões e de informações na tela, alteramos o modo de se selicionar unidades e criamos telas intermediárias para direcionar o jogador durante o jogo. 
 
 Finalmente, depois destas mudanças finais, o jogo foi concluido.
+
+Cabe ressaltar, que as grandes dificuldades encontradas foram em estruturas de Pattern, e na diagramação de telas. Buscando entender melhor as restrições de cada tipo de Layout, o jogo foi implementado da forma que mais se encaixava nos Layouts escolhidos.
 
 # Destaques de Código
 # Destaques de Pattern
@@ -35,9 +37,10 @@ Finalmente, depois destas mudanças finais, o jogo foi concluido.
 
 ## Código do Patern
 # Conclusões e Trabalhos Futuros
-Após finalizarmos o projeto, concluimos que ainda há muito que pode ser explorado dentro deste jogo. A programação das classes assim como a escolha de interfaces foi feita de modo que é fácil de se criar novas fases, assim como novas peças. Muitas ideias de peças foram descartadas ao longo do percurso pois seriam muito demoradas para serem implementadas, mas trariam uma complexidadee e diversidade maior para o jogo. Com mais tempo, seria possível implementar essas peças e outras, assim como novas fases. Também gostariamos de implementar futuramente um modo "construtor" no jogo, em que o jogador consegueria construir sua própria fase dentro do joga e jogá-la. Isto seria muito interessante, pois abre um senário para a criatividade do jogador que não pode ser explorado somente com fase pré-desenvolvidas.
+Após finalizarmos o projeto, concluimos que ainda há muito que pode ser explorado dentro deste jogo. A programação das classes assim como a escolha de interfaces foi feita de modo que é fácil de se criar novas fases, assim como novas peças. Muitas ideias de peças foram descartadas ao longo do percurso pois seriam muito demoradas para serem implementadas, mas trariam uma complexidadee e diversidade maior para o jogo. Com mais tempo, seria possível implementar essas peças e outras, assim como novas fases. Também gostariamos de implementar futuramente um modo "construtor" no jogo, em que o jogador consegueria construir sua própria fase dentro do jogo e jogá-la. Isto seria muito interessante, pois abre um senário para a criatividade do jogador que não pode ser explorado somente com fase pré-desenvolvidas.
 
 Outra implementação que gostariamos de fazer futuramente, pois acreditamos que melhoraria muito a jogabilidade, é o mapeamento do percurso mouse, de modo que o jogador conseguisse fazer todas as construções sem utilizar o teclado. Isto deixaria o jogo ainda mais dinâmico e intuitivo de se jogar.
+Além disso, esse projeto foi de grandes lições para o que para nós foi o primeiro jogo desenvolvido, pretendemos nos aprofundar mais para que novos projetos possam ser desenvolvidos com uma melhor qualidade, tanto de código, quanto de estética. Cremos que esse projeto possam auxiliar no desenvolvimento de outras aplicações futuramente, uma vez que tivemos a opurtunidade de compreendermos melhor conceitos de programação orientada a objetos, e também de ferramentas para o desenvivolvimento de aplicações que não fiquem rodando apenas no console de uma IDE ou em um terminal.
 # Documentação dos Componentes
 # Diagramas
 
@@ -50,7 +53,9 @@ Este diagrama mostra o percurso que o jogador faz ao iniciar o jogo, e quais pos
 
 ![imagem_Diagrama_de_componentes](imagem_Diagrama_de_componetes.png)
 
-### Componente Tabuleiro
+* Como grande parte das interfaces estão relacionadas com mais de um componente, elas serão detalhadas depois da apresentação de todos os componentes.
+
+## Componente Tabuleiro
 
 Este componente representa todos os tabuleiros gerados no jogo. Ele interage com todas as peças do jogo, já que os tabuleiros possuim uma matriz de peças, interage com o recurso, já que cada tabuleiro possui seus determinados recursos no início do jogo e interage com todas as fases, já que cada fase do jogo nescessariamente possui um tabuleiro.
 
@@ -60,9 +65,27 @@ Este componente representa todos os tabuleiros gerados no jogo. Ele interage com
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classes|pt.principal|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|ITabuleiro, ITabuleiroDois, ITabuleiroTres|
+
+### Interfaces
+Interfaces associadas a esse componente:
+
+~~~java
+public interface ITabuleiro{
+	
+	public void criarTab();
+	public void fazerTab(int arvores, int pedras, int lagos, int r, int tempo);
+	public void addFundo();
+	public void entrar(int l, int posicaoY,char t);
+	public void executar();
+	public boolean procurarMonstro();
+	public void adicionaPeca(Pecas img, int posicao);
+	public void removerPeca(int posicao);
+	public void adicionaComando (JButton comando);
+}
+~~~
 
 ### Componente Aliadas
 
@@ -74,9 +97,9 @@ Este componente representa todas as peças aliadas do jogo (que o jogador pode c
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IPeças|
+|Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
 ### Componente Inimigas
 
@@ -88,9 +111,9 @@ Este componente representa todas as peças inimigas do jogo (os monstros que inv
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IPeças|
+|Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
 ### Componente Neutras
 
@@ -102,9 +125,9 @@ Este componente representa todas as peças neutras do jogo, que são posiconas n
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IPeças|
+|Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
 
 ### Componente Vazio
@@ -117,13 +140,13 @@ Este componente representa todas as peças da classe vazio presentes no tabuleir
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.pecas|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IPeças|
+|Interfaces|IPeças,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
 ### Componente Recursos
 
-Este componente representa o recurso do tabuleiro.
+Este componente representa os recursos necessários para a construção de peças de defesa.
 
 ![imagem_componentes_Recursos](imagem_componentes_Recursos.png)
 
@@ -131,7 +154,7 @@ Este componente representa o recurso do tabuleiro.
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.principal|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
 |Interfaces|IRecursos|
 
@@ -145,9 +168,9 @@ Este componente representa a fase 1 do jogo. Como a fase um é composta por um t
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.principal.fases|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IFases|
+|Interfaces|IFases,ITabuleiro|
 
 ### Componente Fase2
 
@@ -159,9 +182,9 @@ Este componente representa a fase 2 do jogo. Como a fase dois é composta por um
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.principal.fases|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IFases|
+|Interfaces|IFases,ITabuleiro,ITabuleiroDois|
 
 ### Componente Fase3
 
@@ -173,9 +196,9 @@ Este componente representa a fase 3 do jogo. Como a fase três é composta por u
 
 |Item|Detalhamento|
 |:-----:|:------:|
-|Classe||
+|Classe|pt.principal.fases|
 |Autores|Pedro Hori Bueno, Matheus Augusto da Silva Cândido|
-|Interfaces|IFases|
+|Interfaces|IFases,ITabuleiro,ITabuleiroDois,ITabuleiroTres|
 
 
 ### Interfaces
